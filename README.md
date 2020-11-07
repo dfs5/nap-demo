@@ -137,10 +137,15 @@ Kibana GUI should load. Select Dashboards in Menue and import both *.ndjson file
 
 In browser open: https://myapp1.de and browse through the app to generate some traffic.
 
-In browser open: https://myapp1.de/?p=<script> 
-and refresh screen view times to generate some blocking events.
+In browser open: https://dev.myapp1.de/?p=<script> 
+to show there is no WAF security in front of this Dev environment.
 
-Switch bach to Kibana --> Overview --> Dashboards to see the events.
+In browser open: https://myapp1.de/?p=<script> 
+to demostrate that the Prod environment is protected by NAP.
+
+Refresh screen view times to generate view more blocking events.
+
+Switch bach to Kibana --> Overview --> Dashboards to see the loged events.
 
 Congratulates!!! - You are done with the Demo
 
