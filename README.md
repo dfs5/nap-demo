@@ -104,9 +104,7 @@ In browser open: https://myapp1.de/?p=<script>
 
 You should see the ASM blocking page.
 
-Finally we want add some visibility. For this we add Kibana dashboard based on this repo but updated to the last release:
-
-https://github.com/MattDierick/f5-waf-elk-dashboards
+Finally we want add some visibility. For this we add Kibana dashboard based on DevCentral artikel (repo: https://devcentral.f5.com/s/articles/Implementing-BIG-IP-WAF-logging-and-visibility-with-ELK) but updated to the last ELK release:
 
 $ cd f5-waf-elk-dashboards
 
@@ -119,6 +117,8 @@ $ docker-compose up -d
 It takes a while for ELK stack to get ready. You can verify the start process with:
 
 $ docker logs f5-waf-elk-dashboards_elasticsearch_1
+
+In Kibana Menu: Stack Management/Saved objects "Import" both ndjson-files from /kibana folder. These files will give you 2 dashboards: Overveiw and False Positives   
 
 Adjust app_protect_security_log in nginx.conf to point to ELK stack
 
