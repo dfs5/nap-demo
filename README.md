@@ -19,8 +19,8 @@ Ubuntu Server 18.04 VM running following docker containers:
 
 NGINX steers traffic to the backend containers based on host name and restricts access to some administrative paths for the Prod environment.
 
-NGINX App Protect (NAP) module in NNGINX is used to secure the application. 
-![source](https://oc.dfs5.net/index.php/apps/files_sharing/ajax/publicpreview.php?x=3260&y=1004&a=true&file=draw.jpg&t=f3dwv7XEnFznsFQ&scalingup=0)
+NGINX App Protect (NAP) module in NGINX is used to secure the application. 
+![source](https://oc.dfs5.net/s/xwa6Kk52RoZ6CKy/download)
 
 For reference on administering NAP check the official NGINX docs:
 
