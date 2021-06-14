@@ -6,6 +6,8 @@ services:
     volumes:
       - ./logstash/conf.d:/etc/logstash/conf.d:ro
       - ./elk:/var/lib/elasticsearch
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
     ports:
     - "9200:9200"
     - "5601:5601"
